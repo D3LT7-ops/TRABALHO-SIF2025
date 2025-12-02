@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon - Tudo o que você precisa está aqui</title>
+    <link rel="stylesheet" href="css/style.css">
+       
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-icon">▶</span>amazon
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar na Amazon.com.br">
+                <button>🔍</button>
+            </div>
+
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Início</a></li>
+                <li><a href="#categories">Categorias</a></li>
+                <li><a href="#products">Ofertas</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+
+            <div class="cart-icon">
+                🛒
+                <span class="cart-count">3</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="subtitle">Frete GRÁTIS em milhões de produtos</div>
+                <h1>Encontre tudo o que você <span class="highlight">precisa</span></h1>
+                <p>Milhões de produtos com os melhores preços e entrega rápida. Da tecnologia à moda, dos livros aos eletrônicos - tudo em um só lugar.</p>
+                
+                <div class="cta-buttons">
+                    <button class="btn-primary">Começar a Comprar</button>
+                    <button class="btn-secondary">Ver Ofertas</button>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="product-showcase">
+                    <div class="product-box">
+                        <div class="product-icon">📱</div>
+                        <h3>Eletrônicos</h3>
+                        <p>Até 50% OFF</p>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-icon">👕</div>
+                        <h3>Moda</h3>
+                        <p>Novidades</p>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-icon">📚</div>
+                        <h3>Livros</h3>
+                        <p>Best Sellers</p>
+                    </div>
+                    <div class="product-box">
+                        <div class="product-icon">🏠</div>
+                        <h3>Casa</h3>
+                        <p>Decoração</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <h2 class="section-title">Compre por Categoria</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="category-image">💻</div>
+                <div class="category-content">
+                    <h3>Eletrônicos</h3>
+                    <p>Notebooks, smartphones, tablets e muito mais com os melhores preços.</p>
+                    <a href="#" class="category-link">Ver mais →</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">👗</div>
+                <div class="category-content">
+                    <h3>Moda e Acessórios</h3>
+                    <p>As últimas tendências em roupas, calçados e acessórios.</p>
+                    <a href="#" class="category-link">Ver mais →</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">🏡</div>
+                <div class="category-content">
+                    <h3>Casa e Cozinha</h3>
+                    <p>Tudo para deixar sua casa ainda mais confortável.</p>
+                    <a href="#" class="category-link">Ver mais →</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">🎮</div>
+                <div class="category-content">
+                    <h3>Games e Consoles</h3>
+                    <p>Os melhores jogos e consoles para você se divertir.</p>
+                    <a href="#" class="category-link">Ver mais →</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">📖</div>
+                <div class="category-content">
+                    <h3>Livros e Kindle</h3>
+                    <p>Milhares de títulos em livros físicos e digitais.</p>
+                    <a href="#" class="category-link">Ver mais →</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">⚽</div>
+                <div class="category-content">
+                    <h3>Esportes e Fitness</h3>
+                    <p>Equipamentos e roupas para sua prática esportiva.</p>
+                    <a href="#" class="category-link">Ver mais →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2 class="section-title">Ofertas do Dia</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="prime-badge">prime</div>
+                <div class="product-image">📱</div>
+                <h3>Smartphone Galaxy S23</h3>
+                <div class="rating">⭐⭐⭐⭐⭐ (2.847)</div>
+                <div class="price">
+                    R$ 2.999,00
+                    <span class="price-old">R$ 4.499,00</span>
+                </div>
+                <p>Frete GRÁTIS</p>
+                <button class="add-to-cart-btn">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="product-card">
+                <div class="prime-badge">prime</div>
+                <div class="product-image">💻</div>
+                <h3>Notebook Dell Inspiron 15</h3>
+                <div class="rating">⭐⭐⭐⭐☆ (1.523)</div>
+                <div class="price">
+                    R$ 3.499,00
+                    <span class="price-old">R$ 4.999,00</span>
+                </div>
+                <p>Frete GRÁTIS</p>
+                <button class="add-to-cart-btn">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="product-card">
+                <div class="prime-badge">prime</div>
+                <div class="product-image">🎧</div>
+                <h3>Fone Bluetooth Premium</h3>
+                <div class="rating">⭐⭐⭐⭐⭐ (5.234)</div>
+                <div class="price">
+                    R$ 299,00
+                    <span class="price-old">R$ 599,00</span>
+                </div>
+                <p>Frete GRÁTIS</p>
+                <button class="add-to-cart-btn">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="product-card">
+                <div class="prime-badge">prime</div>
+                <div class="product-image">⌚</div>
+                <h3>Smartwatch Fitness Pro</h3>
+                <div class="rating">⭐⭐⭐⭐☆ (3.891)</div>
+                <div class="price">
+                    R$ 599,00
+                    <span class="price-old">R$ 999,00</span>
+                </div>
+                <p>Frete GRÁTIS</p>
+                <button class="add-to-cart-btn">Adicionar ao carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Fale Conosco</h2>
+        <div class="contact-content">
+            <form onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label>Nome Completo</label>
+                    <input type="text" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Assunto</label>
+                    <input type="text" placeholder="Como podemos ajudar?" required>
+                </div>
+                <div class="form-group">
+                    <label>Mensagem</label>
+                    <textarea placeholder="Descreva sua dúvida ou sugestão..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Conheça-nos</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Sobre a Amazon</a></li>
+                    <li><a href="#">Carreira</a></li>
+                    <li><a href="#">Relações com Investidores</a></li>
+                    <li><a href="#">Amazon Devices</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Ganhe Dinheiro</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Venda na Amazon</a></li>
+                    <li><a href="#">Seja um Afiliado</a></li>
+                    <li><a href="#">Publique seu Livro</a></li>
+                    <li><a href="#">Amazon Pay</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Atendimento</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Rastrear Pedido</a></li>
+                    <li><a href="#">Devoluções</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Pagamento</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Cartões de Crédito</a></li>
+                    <li><a href="#">Boleto Bancário</a></li>
+                    <li><a href="#">Pix</a></li>
+                    <li><a href="#">Parcelamento</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 Amazon.com.br - Todos os direitos reservados | Projeto Landing Page</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
